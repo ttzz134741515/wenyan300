@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#bd451d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="文言实词300">
+  <title>文言实词300个 · 情景串记</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="reference-stories.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  </script>
+</body>
+</html>
